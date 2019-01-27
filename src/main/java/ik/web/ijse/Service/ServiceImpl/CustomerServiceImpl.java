@@ -36,7 +36,9 @@ public class CustomerServiceImpl implements CustomerService {
         if (customerEntity.getId()!= null){
             customerRepo.save(customerEntity);
             return message = "Update Success";
+            
         }
+        System.out.println("weera");
         return message = "update fail";
     }
 
