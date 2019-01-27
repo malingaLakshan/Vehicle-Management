@@ -24,6 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
                 customerDto.getName(), customerDto.getTp(), customerDto.getAddress());
 
         customerRepo.save(customer);
+        System.out.println("malinga lakshan");
         return "DaTA sAVED";
     }
 
